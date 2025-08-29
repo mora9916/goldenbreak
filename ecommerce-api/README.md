@@ -1,7 +1,7 @@
 # Golden Break API 🎱
 
 Esta es la **API de Golden Break**, una tienda de artículos de billar.  
-Permite gestionar usuarios, productos, categorías, carritos, órdenes, pagos, reviews, direcciones de envío, deseos (wishlist) y notificaciones.
+Permite gestionar usuarios, productos, categorías, carritos, órdenes, pagos, reviews, direcciones de envío, lista de deseos o articulos favoritos (wishlist) y notificaciones.
 
 ---
 
@@ -22,8 +22,8 @@ goldenbreak/
 │ ├── userController.js # Gestión de usuarios
 │ └── wishController.js # Wishlist de usuarios
 │
-├── models/
-│ ├── cart.js
+├── models/ # Aquí se comparte la estructura/campos que contiene cada uno de estos
+│ ├── cart.js 
 │ ├── category.js
 │ ├── notification.js
 │ ├── order.js
@@ -34,7 +34,7 @@ goldenbreak/
 │ ├── user.js
 │ └── whishList.js
 │
-├── routes/
+├── routes/ # En cada rutas designo los endpoints para cada función de los controllers
 │ ├── authRoutes.js
 │ ├── cartRoutes.js
 │ ├── categoryRoutes.js
@@ -48,7 +48,7 @@ goldenbreak/
 │ ├── userRoutes.js
 │ └── whishRoutes.js
 │
-├── middlewares/
+├── middlewares/ # En esta carpeta contenemos los distintos middlewares tanto para cada query así como la validación de errores globales
 │ ├── authMiddleware.js
 │ ├── errorHandler.js
 │ ├── globalErrorHandler.js
@@ -90,7 +90,7 @@ Crear, actualizar, consultar órdenes
 Pagos
 Registro y manejo de pagos
 Wishlist
-CRUD de deseos de usuario
+CRUD de lista deseos de usuario
 Reviews
 CRUD de reseñas de productos
 Direcciones de envío
